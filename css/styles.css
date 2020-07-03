@@ -388,8 +388,8 @@ time, mark, audio, video {
 				padding-bottom: 2vh;
 				border-bottom: solid 1px black; 
 				font-family: franklin-reg;
-				    font-size: 16px;
-    			line-height: 23px;
+				    font-size: 18px;
+    			line-height: 26px;
 
 			}
 			
@@ -528,6 +528,12 @@ time, mark, audio, video {
 		  
 		}
 
+
+		.grid-container-01 > .item1 {
+		  margin-left: 18.5vw; 
+		  
+		}
+
 		.grid-container-03 {
 			/*grid-template-columns: 1fr 1fr 40px 20%;*/
 		  /*display: grid;*/
@@ -660,6 +666,7 @@ time, mark, audio, video {
 		}
 		.caption{
 			font-size: 10px; 
+			line-height: 14px; 
 		}
 		.big{
 		padding-top: 3vh; 
