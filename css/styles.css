@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 	@font-face {
   font-family: franklin-reg;
-  src: url(../fonts/franklin-Regular.otf);
+  src: url(../fonts/franklin-regular.otf);
 }
 	@font-face {
   font-family: franklin-gothic;
