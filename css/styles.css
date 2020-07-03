@@ -373,7 +373,7 @@ time, mark, audio, video {
     width: 100%;
 		}
 
-		
+
 }
 
 /*mobile styles*/
@@ -619,8 +619,9 @@ time, mark, audio, video {
 		  visibility: visible;
 		}
 		audio{
-			width: 110%;
-			margin-left: -6%; 
+			width: 100%;
+			height: 10vh; 
+			/*margin-left: -6%; */
 			border-radius: 1px; 
 		}
 		audio::-webkit-media-controls-enclosure{
