@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WHAT IS ART? INSTITUTE</title>
+
+<style type="text/css">
+		html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: karla;
+}
+
+	@font-face {
+  font-family: courier-new;
+  src: url(fonts/courier-new.otf);
+}
+
+
+	@font-face {
+  font-family: franklin-gothic;
+  src: url(fonts/franklin-gothic.otf);
+}
+
+	@font-face {
+  font-family: karla;
+  src: url(fonts/franklin-Regular.otf);
+}
+
+
+	@font-face {
+  font-family: recoleta;
+  src: url(fonts/RecoletaRegular.otf);
+}
+
+
+
+	.row-01-column{
+		display: block; 
+		float: left;
+		margin-right: 5%; 
+	}
+	.row-01-column ul{
+		width: 100%; 
+	}
+	.row-01-column ul li{
+		width: 25%; 
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	.row-01-column-last{
+		display: block; 
+		float: left;
+		width: 20%; 
+		
+	}
+	#row-01{
+		margin-top: 3vh; 
+		height: 12vh; 
+		width: 100%; 
+	}
+	.row-02{
+		text-align: center;
+		width: 100%; 		
+		color: #0088CF; 
+		margin-bottom: 10vh; 
+		position: relative;
+		
+	}
+	.row-02 p{
+		font-size: 6vw;
+    	line-height: 7vw; 
+		font-family: recoleta;	
+	}
+	.divider{
+		width: 100%; 
+		height: .5vh; 
+		/*background-color: blue; */
+		display: block;
+		position: relative;
+	}
+	#about{
+		cursor: pointer; 
+		text-align: right; 
+		margin-left: 70%;  
+		width: 3vw;
+	}
+	.outside{
+		width: 20%; 
+	}
+	.middle{
+		width: 50%; 
+	}
+	#logo{
+		margin-left: 2vw;
+		height: 2.5vh; 
+	}
+	#banner{
+		width: 100%;
+    /*height: 5vh;*/
+     padding-top: 1vh;
+    padding-bottom: 1.2vh;
+    background-color: #FFDD00;
+	
+	}
+
+	#banner-02{
+		width: 100%;
+		position: fixed;
+		top: 96vh; 
+    /*height: 5vh;*/
+     padding-top: 1vh;
+    padding-bottom: 1.2vh;
+    background-color: #F2F2F2;
+	
+	}
+
+#banner-text {
+	  width: 100%;
+	  margin-top: 10px; 
+	  position: relative;
+	  animation: myfirst 60s linear 2s infinite ;
+	}
+
+	@keyframes myfirst {
+	  0%   { left:100%; }
+	  100% { left:-100%;}
+	}
+	.blinking {
+  -webkit-animation: 1s blink ease infinite;
+  -moz-animation: 1s blink ease infinite;
+  -ms-animation: 1s blink ease infinite;
+  -o-animation: 1s blink ease infinite;
+  animation: 1s blink ease infinite;
+  
+}
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.description-column-00{
+	display: block;
+	float: left;
+	width: 12.5%; 
+	
+}
+.description-column-01{
+	display: block;
+	float: left;
+	width: 10%; 
+	/*margin-left: 15%; */
+}
+.description-column-02{
+	display: block;
+	float: left;
+	width: 33%; 
+	margin-left: 2%; 
+}
+.description-column-03{
+	display: block;
+	float: left;
+	width: 13%; 
+	margin-left: 2%; 
+}
+.description-column-04{
+	display: block;
+	float: left;
+	width: 13%; 
+	margin-left: 2%; 
+}
+.description-column-05{
+	display: block;
+	float: left;
+	width: 12.5%; 
+	
+}
+.row{
+	margin-bottom: 35vh; 
+	width: 100%; 
+}
+.row p{
+	color: #333333; 
+	font-size: 1vw; 
+	line-height: 1.4vw; 
+}
+.heading{
+	font-family: franklin-gothic;	
+}
+#tags ul li{
+/*		font-family: franklin-gothic;	*/
+	font-size: .8vw; 
+	color: #333333;
+}
+#about-page{
+	/*width: 100vw;  
+	height: 100vh; 
+	position: fixed; */
+	background-color: #0088CF; 
+	z-index: 10; 	
+	/*display: none; */
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0088CF; 
+  /*background-color: rgba(0,0,0, 0.9);*/
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  
+}
+
+.overlay .closebtn {
+  position: absolute;
+      top: 4vh;
+    right: 3%;
+  width: 2.5vw; 
+  
+}
+
+</style>
+
+
+</head>
+<body>
+<div  id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+	  	<img class="closebtn" src="images/close.svg">
+	  </a>
+	  <div class="overlay-content">
+	  	<ul>
+	  		<li></li>
+	  			About: 
+	  		<li></li>
+	  		<li></li>
+	  	</ul>
+	  </div>
+
+</div>
+
+
+<div id="banner">
+	<span id="banner-text">Projects with a <svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#39B54A" /></svg> are participatory in nature. Please add your voice. This work does not exist without everyone being heard.</span>
+</div>
+<!-- 
+<div id="banner-02">
+	<div id="tags" class="row-01-column middle">
+		<ul>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#39B54A" /></svg> PARTICIPATORY</li>
+			<li><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="black" /></svg> IN DEVELOPMENT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#0088CF" /></svg> ARCHIVED PROJECT</li>
+		</ul>
+	</div>
+</div> -->
+
+<div id="row-01">
+	<div  class="row-01-column outside">
+		<img src="images/logo.svg" id="logo">
+	</div>
+
+	<div id="tags" class="row-01-column middle">
+		<ul>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#39B54A" /></svg> PARTICIPATORY</li>
+			<li><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="black" /></svg> IN DEVELOPMENT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#0088CF" /></svg> ARCHIVED PROJECT</li>
+		</ul>
+	</div>
+
+	<div  class="row-01-column-last">
+		<img src="images/about.svg" id="about" onclick="openNav()">
+	</div>
+</div>	
+
+<div class="divider"></div>
+
+<div class="row-02">
+	<p>
+
+A multifaceted research initiative to aggregate and synthesize a new definition of art.
+
+
+		<!-- O que é Arte? Ligar<br>
+		What is Art? Call<br>
+		¿Que es Arte? Llamada<br>
+		+1 (201) 204-0535 -->
+	<!-- 	
+	O QUE É ARTE? LIGAR +1 (201) 204-0535<br>
+	什麼是藝術？ 電話 +1 (201) 204-0535<br>
+	WHAT IS ART? CALL +1 (201) 204-0535<br>
+	¿QUE ES ARTE? LLAMADA +1 (201) 204-0535<br>
+	예술이란 무엇인가? 요구 +1 (201) 204-0535<br> -->
+	</p>
+</div>
+
+<div class="divider"></div>
+
+
+<div class="row" >
+	<div class="description-column-00">
+		   &nbsp;
+	</div>
+	<div class="description-column-01">
+		<span class="heading">TITLE:</span><br><br>
+		<p>INITIATIVE 01</p>
+	</div>
+	<div class="description-column-02">
+		<span class="heading">DESCRIPTION:</span><br><br>
+		<p>We want to hear from you. Call +1 (201) 204-0535 & leave a message telling us what art is to you. There is no wrong answer. </p>
+	</div>
+	<div class="description-column-03">
+		<span class="heading">STATUS:</span><br><br>
+		<p><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</p>
+	</div>
+	<div class="description-column-04">
+		<span class="heading">MEDIUM:</span><br><br>
+		<p>Participants, Audio recording, Radio, Website</p>
+	</div>
+	<div class="description-column-05">
+		 &nbsp;
+	</div>
+</div>
+<!-- 
+
+<div class="divider"></div>
+
+
+
+<div class="row-02">
+	<img src="images/bf-01-alc.jpg">
+	
+</div>
+
+<div class="divider"></div>
+
+
+<div class="row" >
+	<div class="description-column-00">
+		   &nbsp;
+	</div>
+	<div class="description-column-01">
+		<span class="heading">TITLE:</span><br><br>
+		<p>INITIATIVE 01</p>
+	</div>
+	<div class="description-column-02">
+		<span class="heading">DESCRIPTION:</span><br><br>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl </p>
+	</div>
+	<div class="description-column-03">
+		<span class="heading">STATUS:</span><br><br>
+		<p>INITIATIVE 01</p>
+	</div>
+	<div class="description-column-04">
+		<span class="heading">MEDIUM:</span><br><br>
+		<p>Calcium Carbonate, Water, Backpack sprayer, digital video, digital photographs</p>
+	</div>
+	<div class="description-column-05">
+		 &nbsp;
+	</div>
+</div>
+ -->
+</body>
+
+<script type="text/javascript">
+	
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+</script>
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>WHAT IS ART? INSTITUTE</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+	<script src="http://hillarychurchill.com/js/typed.custom.js"></script>
+
+	
+
+<style type="text/css">
+		html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+
+	@font-face {
+  font-family: courier-new;
+  src: url(fonts/courier-new.otf);
+}
+
+
+	@font-face {
+  font-family: franklin-gothic;
+  src: url(fonts/franklin-gothic.otf);
+}
+
+	@font-face {
+  font-family: karla;
+  src: url(fonts/franklin-Regular.otf);
+}
+
+
+	@font-face {
+  font-family: recoleta;
+  src: url(fonts/RecoletaRegular.otf);
+}
+
+
+	@font-face {
+  font-family: recoleta-light;
+  src: url(fonts/recoleta-light.otf);
+}
+
+	@keyframes myfirst {
+	  0%   { left:100%; }
+	  100% { left:-100%;}
+	}
+	.blinking {
+  -webkit-animation: 1s blink ease infinite;
+  -moz-animation: 1s blink ease infinite;
+  -ms-animation: 1s blink ease infinite;
+  -o-animation: 1s blink ease infinite;
+  animation: 1s blink ease infinite;
+  
+}
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.italic{
+	 	font-style: italic;
+	}
+
+#top-border, #bottom, #left, #right {
+	background: #fff;
+	position: fixed;
+	z-index: 10000;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 2vw;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top-border, #bottom {
+		left: 0; right: 0;
+		height: 2vw;
+		}
+		#top-border { top: 0; }
+		#bottom { bottom: 0; }
+
+	
+/*desktop styles*/
+@media screen and (min-width: 768px) {
+	
+		.row-02{
+			
+			width: 95%;
+			margin-left: 2.5%;  	
+			/*height: 80vh; 	*/
+			/*margin-top: 5vh;*/
+			 
+			position: relative;
+			background-color: #F6F6F6; 
+			
+		}
+		.row-02 #prompt{
+			text-align: center;
+    color: #0088CF;
+    font-family: recoleta;
+    font-size: 10vw;
+    line-height: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+		}
+		.row-02 p{
+			text-align: left;
+			color: #0088CF; 
+			font-size: 1.2vw;
+				
+		}
+		.divider{
+			width: 100%; 
+			height: .5vh; 
+			/*background-color: blue; */
+			display: block;
+			position: relative;
+		}
+		#about{
+			cursor: pointer; 
+			text-align: right; 
+			/*margin-left: 70%;  
+			width: 3vw;*/
+		}
+		
+		#logo{
+			margin-left: 58%;
+	    /*height: 2.5vh;*/
+		}
+		#banner{
+			width: 100%;
+	    /*height: 5vh;*/
+	     padding-top: 1vh;
+	    padding-bottom: 1.2vh;
+	    background-color: #FFDD00;
+		
+		}
+
+		#banner-02{
+			width: 100%;
+			position: fixed;
+			top: 96vh; 
+	    /*height: 5vh;*/
+	     padding-top: 1vh;
+	    padding-bottom: 1.2vh;
+	    background-color: #F2F2F2;
+		
+		}
+
+	#banner-text {
+		  width: 100%;
+		  margin-top: 10px; 
+		  position: relative;
+		  animation: myfirst 60s linear 2s infinite ;
+		}
+
+
+	.row{
+		margin-bottom: 35vh; 
+		width: 100%; 
+	}
+	.row p{
+		color: #333333; 
+		font-size: 1vw; 
+		line-height: 1.4vw; 
+	}
+	.heading{
+		font-family: franklin-gothic;
+		font-size: 1.2vw;	
+	}
+	#tags ul li{
+	/*		font-family: franklin-gothic;	*/
+		font-size: .8vw; 
+		color: #333333;
+	}
+	#about-page{
+		/*width: 100vw;  
+		height: 100vh; 
+		position: fixed; */
+		background-color: #0088CF; 
+		z-index: 10; 	
+		/*display: none; */
+	}
+
+	.overlay {
+	  height: 0%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #FFDD00; 
+	  /*background-color: rgba(0,0,0, 0.9);*/
+	  overflow-y: hidden;
+	  transition: 0.5s;
+	}
+
+	.overlay-content {
+	  position: relative;
+	  top: 25%;
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 30px;
+	}
+
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlay a:hover, .overlay a:focus {
+	  
+	}
+
+	.overlay .closebtn {
+	  position: absolute;
+	      top: 4vh;
+	    right: 3%;
+	  width: 2.5vw; 
+	  
+	}
+
+	#top{
+		width: 100%;
+		height: 12vh; 
+		background-color: white;  
+
+	}
+	#top #logo{
+		 width: 18%;
+	    margin-left: 41%; 
+		margin-top: 2%;
+		margin-bottom: .8%;
+	}
+	#top p{
+		font-family: karla; 
+		text-align: center;
+		margin-top: 1%;
+	    font-size: 1.1vw;
+	    background-color: #FFDD00; 
+	    padding-top: 1.5vh; 
+	    padding-bottom: 1vh; 	
+	}
+	.closebtn{
+		position: fixed;
+		top: 2%; 
+		left: 90%; 
+	}
+	.about-btn{
+		position: fixed;
+		top: 3.5%; 
+		left: 90%; 
+	}
+	.grid-container {
+		/*background-color: white; */
+	  display: inline-grid; 
+	  grid-template-columns: 15vw 40vw 10vw 15vw;
+	  grid-gap: 10px;
+	  padding: 5vw 10vw 5vw 10vw  ;
+	}
+
+	.grid-container > div {
+	  text-align: left;
+	  font-size: 30px;
+	}
+	.active-tag{
+		font-family: karla; 
+		position: absolute;
+		left: 2vw; 
+		top: 3%; 
+		border-radius: 5vw; 
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: .8vw; 
+		background-color: #FF5C35; 
+		color: white; 
+	}
+
+	.dev-tag{
+		font-family: karla; 
+		position: absolute;
+		left: 10vw; 
+		top: 4%; 
+		border-radius: 5vw; 
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: .8vw; 
+		background-color: #000; 
+		color: white; 
+	}
+	.pill-button{
+		font-family: franklin-gothic;
+		position: absolute;
+		left: 81%;  
+		top: 3%; 
+		border-radius: 5vw; 
+		border: 2px solid black;
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: 1vw; 
+		color: black; 
+	}
+	.pill-button:hover {
+		background-color: black; 
+		color: white; 
+	}
+
+	.about-button:hover {
+		background-color: black; 
+		color: white; 
+	}
+
+	.about-button{
+		font-family: franklin-gothic;
+		position: absolute;
+		left: 90%; 
+		top: 3%; 
+		border-radius: 10vw; 
+		background-color: #FFDD00; 
+		border: 2px solid #FFDD00;
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: 1vw; 
+		color: black; 
+	}
+	.row-03{
+		width: 100%; 	
+		position: relative;
+		background-color: #E6E6E6; 
+	}
+	#phone-number{
+		    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+    font-family: recoleta;
+    margin-top: -5vh;
+	}
+	.solid-pill{
+		font-family: karla; 
+		position: absolute;
+		left: 10vw; 
+		top: 3%; 
+		border-radius: 5vw; 
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: .8vw; 
+		background-color: grey; 
+		color: white; 
+
+	}
+	.date{
+		left: 11vw; 
+	}
+}
+
+/*mobile styles*/
+
+@media screen and (max-width: 769px) {
+		@keyframes myfirst {
+	  0%   { left:35%; }
+	  100% { left:-100%;}
+	}
+
+	body{
+		overflow-x: hidden; 
+	}
+	.row-02{
+			
+			width: 100%; 	
+			/*height: 80vh; 	*/
+			/*margin-top: 5vh;*/
+			 
+			position: relative;
+			background-color: #F6F6F6; 
+			
+		}
+		.row-02 #prompt{
+			text-align: center;
+		    color: #000;
+		    font-family: recoleta;
+		    font-size: 14vw;
+		    line-height: 17vw;
+		    padding-top: 10vh;
+		}
+		.row-02 p{
+			text-align: left;
+			color: black; 
+			font-size: 14px;
+				
+		}
+		.divider{
+			width: 100%; 
+			height: .5vh; 
+			/*background-color: blue; */
+			display: block;
+			position: relative;
+		}
+		#about{
+			cursor: pointer; 
+			text-align: right; 
+			/*margin-left: 70%;  
+			width: 3vw;*/
+		}
+		
+		#logo{
+			margin-left: 58%;
+	    /*height: 2.5vh;*/
+		}
+		#banner{
+			overflow: hidden;
+			width: 300%;
+	    /*height: 5vh;*/
+	     padding-top: 1vh;
+	    padding-bottom: 1.2vh;
+	    background-color: #FFDD00;
+		
+		}
+
+		#banner-02{
+			width: 100%;
+			position: fixed;
+			top: 96vh; 
+	    /*height: 5vh;*/
+	     padding-top: 1vh;
+	    padding-bottom: 1.2vh;
+	    background-color: #F2F2F2;
+		
+		}
+
+	#banner-text {
+		  width: 300%;
+		  margin-top: 10px; 
+		  position: relative;
+		  animation: myfirst 60s linear 2s infinite ;
+		}
+
+
+	.row{
+		margin-bottom: 35vh; 
+		width: 100%; 
+	}
+	.row p{
+		color: #333333; 
+		font-size: 1vw; 
+		line-height: 1.4vw; 
+	}
+	.heading{
+		font-family: franklin-gothic;
+		font-size: 14px; 
+	}
+	#tags ul li{
+	/*		font-family: franklin-gothic;	*/
+		font-size: .8vw; 
+		color: #333333;
+	}
+	#about-page{
+		/*width: 100vw;  
+		height: 100vh; 
+		position: fixed; */
+		background-color: #0088CF; 
+		z-index: 10; 	
+		/*display: none; */
+	}
+
+	.overlay {
+	  height: 0%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #000; 
+	  /*background-color: rgba(0,0,0, 0.9);*/
+	  overflow-y: hidden;
+	  transition: 0.5s;
+	}
+
+	.overlay-content {
+	  position: relative;
+	  top: 25%;
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 30px;
+	}
+
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlay a:hover, .overlay a:focus {
+	  
+	}
+
+	.overlay .closebtn {
+	  position: absolute;
+	      top: 4vh;
+	    right: 3%;
+	  width: 2.5vw; 
+	  
+	}
+
+	#top{
+		width: 100%;
+		/*height: 12vh; */
+		background-color: white;  
+
+	}
+	#top #logo{
+		     width: 60%;
+    margin-bottom: 5.8%;
+    margin-left: 20%;
+    margin-top: 8%;
+    margin-bottom: 7%;
+	}
+	#top p{
+		font-family: karla; 
+		text-align: center;
+		margin-top: 1%;
+	    font-size: 3vw;
+	    background-color: #FFDD00; 
+	    padding-top: 1.5vh; 
+	    padding-bottom: 1vh; 	
+	}
+	.closebtn{
+		position: fixed;
+		top: 2%; 
+		left: 90%; 
+	}
+	.about-btn{
+		position: fixed;
+		top: 3.5%; 
+		left: 90%; 
+	}
+	.grid-container {
+	  display: inline-grid; 
+	  grid-template-columns: 90vw;
+	    grid-gap: 10px;
+	    padding: 5vw 5vw 5vw 5vw;
+	}
+
+	.grid-container > div {
+	  text-align: left;
+	  font-size: 30px;
+	  margin-top: 50px;
+	}
+	.active-tag{
+		font-family: karla;
+    position: absolute;
+    left: 5vw;
+    top: 2%;
+    border-radius: 100px;
+    padding: 10px 4vw 7px 4vw;
+    font-size: 10px;
+    background-color: #FF5C35;
+    color: white;
+	}
+	.dev-tag{
+		font-family: karla; 
+		position: absolute;
+		left: 10vw; 
+		top: 4%; 
+		border-radius: 5vw; 
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: .8vw; 
+		background-color: #000; 
+		color: white; 
+	}
+	.pill-button{
+		font-family: franklin-gothic;
+		position: absolute;
+		left: 81%;  
+		top: 3%; 
+		border-radius: 5vw; 
+		border: 2px solid black;
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: 1vw; 
+		color: black; 
+	}
+	.solid-pill{
+		font-family: karla;
+	    position: absolute;
+	    top: 2%;
+	    border-radius: 100px;
+	    padding: 10px 4vw 7px 4vw;
+	    font-size: 10px;
+	    background-color: #FF5C35;
+	    color: white;
+	}
+	.pill-button:hover {
+		background-color: black; 
+		color: white; 
+	}
+
+	.about-button:hover {
+		background-color: black; 
+		color: white; 
+	}
+
+	.about-button{
+		font-family: franklin-gothic;
+		position: absolute;
+		left: 90%; 
+		top: 3%; 
+		border-radius: 10vw; 
+		border: 2px solid black;
+		padding: .9vw 1vw .5vw 1vw;
+		font-size: 1vw; 
+		color: black; 
+	}
+	.row-03{
+		width: 100%; 	
+		position: relative;
+		background-color: #grey; 
+	}
+	#phone-number{
+		font-size: 7vw;
+	}
+	#one-liner{
+		display: none; 
+	}
+}	
+</style>
+
+
+</head>
+<body>
+<!-- <div id="left"></div>
+<div id="right"></div>
+<div id="top-border"></div>
+<div id="bottom"></div> -->
+
+<div  id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+	  	<img class="closebtn" src="images/close.svg">
+	  </a>
+	  <div class="overlay-content">
+	 
+	  	<ul>
+	  		<li></li>
+	  			About: 
+	  		<li></li>
+	  		<li></li>
+	  	</ul>
+	  </div>
+
+</div>
+<!-- 
+
+<div id="banner">
+	<span id="banner-text">Projects with a <svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#FF5C35" /></svg> are participatory in nature. Please add your voice. This work does not exist without everyone being heard.</span>
+</div> -->
+
+
+
+
+<div id="top">
+	<img src="images/logo.svg" id="logo">
+
+	<div class="pill-button">
+		LOGIN/SIGNUP
+	</div>
+
+	<div class="about-button" id="about" onclick="openNav()">
+		<span >MORE INFO</span>
+	</div>
+
+	<!-- <p id="one-liner">The <span class="italic">What is Art? Institute</span> is a project-based community research initiative to aggregate and synthesize a new definition of art.</p> -->
+</div>
+	<!-- <div id="tags" class="row-01-column middle">
+		<ul>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#39B54A" /></svg> PARTICIPATORY</li>
+			<li><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="black" /></svg> IN DEVELOPMENT</li>
+			<li><svg height="9" width="9" class=""><circle cx="5" cy="5" r="4" fill="#0088CF" /></svg> ARCHIVED PROJECT</li>
+		</ul>
+	</div> -->
+
+	<!-- <div  class="about-btn">
+		<img src="images/about.svg" id="about" onclick="openNav()">
+	</div> -->
+</div>	
+
+
+
+<div class="row-02">
+		
+	<div class="active-tag">
+		<svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="#fff" /></svg> ACTIVE PROJECT
+	</div>
+	<div id="demo" class="date solid-pill">
+		
+	</div>
+
+		<p id="prompt">
+			<span class="typed-01"></span><br>
+			<span id="phone-number"><span class="typed"></span> +1 (201) 204-0535</span>
+		</p>
+
+	<!-- 	<p id="prompt">
+			Que é Arte? <br>
+			What is Art? <br>
+			¿Que es Arte? <br>
+			
+		</p>
+		<p id="phone-number"><span class="typed"></span> +1 (201) 204-0535</p> -->
+
+
+	<div class="grid-container">
+		  <div class="item1">
+		  	<span class="heading">Project TITLE:</span><br><br>
+					<p>Answering Machine</p>
+		  </div>
+		  <div class="item2"><span class="heading">DESCRIPTION:</span><br><br>
+					<p>We want to hear from you. Call +1 (201) 204-0535 & leave a message telling us what art is to you. There is no wrong answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget diam libero. Curabitur efficitur, sem sit amet hendrerit porttitor, magna leo tempus arcu, in iaculis quam nibh eu lorem. Pellentesque eget ligula vitae nunc blandit viverra vitae in odio. Curabitur bibendum ac nisi ac gravida. Cras vehicula accumsan sem non eleifend. Proin iaculis ut ante sit amet tincidunt. In dignissim, nibh id mattis imperdiet, nisl nisl viverra odio, a ultrices purus lacus ut nunc. Integer vulputate diam lorem. Donec laoreet massa in nisi gravida porta. Phasellus non est enim. Nam at commodo massa, non scelerisque sem. Vivamus tempor erat eros, ac ultricies justo egestas ut. </p>
+		  </div>
+		  <div class="item3">
+		  	<span class="heading">STATUS:</span><br><br>
+					<p><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</p>
+		  </div>  
+		  <div class="item4">
+		  	<span class="heading">MEDIUM:</span><br><br>
+					<p>Participants, Audio recording, Radio, Website</p>
+		  </div>
+		 
+		</div>
+
+</div>
+
+<div class="row-03">
+		
+	<div class="dev-tag">
+		 IN DEVELOPMENT
+	</div>
+
+		<p id="prompt">
+			O que é Arte? <br>
+			What is Art? <br>
+			¿Que es Arte? <br>
+			
+		</p>
+
+
+	<div class="grid-container">
+		  <div class="item1">
+		  	<span class="heading">TITLE:</span><br><br>
+					<p>Project 01</p>
+		  </div>
+		  <div class="item2"><span class="heading">DESCRIPTION:</span><br><br>
+					<p>We want to hear from you. Call +1 (201) 204-0535 & leave a message telling us what art is to you. There is no wrong answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget diam libero. Curabitur efficitur, sem sit amet hendrerit porttitor, magna leo tempus arcu, in iaculis quam nibh eu lorem. Pellentesque eget ligula vitae nunc blandit viverra vitae in odio. Curabitur bibendum ac nisi ac gravida. Cras vehicula accumsan sem non eleifend. Proin iaculis ut ante sit amet tincidunt. In dignissim, nibh id mattis imperdiet, nisl nisl viverra odio, a ultrices purus lacus ut nunc. Integer vulputate diam lorem. Donec laoreet massa in nisi gravida porta. Phasellus non est enim. Nam at commodo massa, non scelerisque sem. Vivamus tempor erat eros, ac ultricies justo egestas ut. </p>
+		  </div>
+		  <div class="item3">
+		  	<span class="heading">STATUS:</span><br><br>
+					<p><svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> ACTIVE PROJECT</p>
+		  </div>  
+		  <div class="item4">
+		  	<span class="heading">MEDIUM:</span><br><br>
+					<p>Participants, Audio recording, Radio, Website</p>
+		  </div>
+		 
+		</div>
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+$(function(){
+	$(".typed").typed({
+		strings: ["Leave a message", "Ligar", "Llamada"],
+		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 50,
+		// time before typing starts
+		startDelay: 200,
+		// backspacing speed
+		backSpeed: 200,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	});
+	$(".typed-01").typed({
+		strings: ["O que é Arte?", "What is Art?", "¿Que es Arte?"],
+		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 50,
+		// time before typing starts
+		startDelay: 200,
+		// backspacing speed
+		backSpeed: 200,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	});
+});
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("July 19, 2020 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = "EXPIRES: " + days + ":" + hours + ":"
+  + minutes + ":" + seconds + " ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+</html>
