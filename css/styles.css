@@ -142,6 +142,7 @@ time, mark, audio, video {
 				position: fixed;
 				top: 2.5vh; 
 				right: 5vw;
+				z-index: 10000000;
 			}
 			.prompt{
 				    font-size: 6vw;
@@ -446,6 +447,7 @@ time, mark, audio, video {
 			    top: 2vh;
 			    right: 5vw;
 			    line-height: 18px;
+			    z-index: 10000000;
 			}
 			.prompt{
 			    font-size: 12vw;
@@ -585,35 +587,38 @@ time, mark, audio, video {
 			cursor: pointer; 
 		}
 		.tooltip .tooltip__content {
-		  background-color: black;
-		  border-radius: 4px;
-		  top: 150%;
-		  color: white;
-		  left: 60%;
-		  margin-left: -70%;
-		  opacity: 0;
-		  padding: .8rem 0.5rem;
-		  position: absolute;
-		  text-align: center;
-		  transition: opacity 0.5s;
-		  visibility: hidden;
-		  width: 130px;
-		  z-index: 1;
-		  font-family: franklin-reg;
-		  font-size: 1vw; 
-		  line-height: .5vw;
+		 background-color: black;
+	    border-radius: 4px;
+	    top: 150%;
+	    color: white;
+	    left: 40%;
+	    margin-left: -70%;
+	    opacity: 0;
+	    padding: .8rem 0.5rem;
+	    position: absolute;
+	    text-align: center;
+	    transition: opacity 0.5s;
+	    visibility: hidden;
+	    width: 130px;
+	    z-index: 1;
+	    font-family: franklin-reg;
+	    font-size: 12px;
+	    line-height: 2.5vw;
 		}
 
 		.tooltip .tooltip__content::after {
 		  border-width: 5px;
-		  border-style: solid;
-		  border-color: black transparent transparent transparent;
-		  content: "";
-		  left: 50%;
-		  margin-left: -5px;
-		  position: absolute;
-		  top: -30%;
-		  transform: rotate(180deg);
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    content: "";
+    left: 90%;
+    margin-left: -5px;
+    position: absolute;
+    top: -29%;
+    transform: rotate(180deg);
+}
+
+
 		}
 
 		.tooltip:hover .tooltip__content {
