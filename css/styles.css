@@ -362,11 +362,11 @@ time, mark, audio, video {
 		.m2 .freebirdFormviewerViewHeaderHeader{
 			border: 1px solid #fff !important;
 		}
-		}
+		
 		.m2 .freebirdFormviewerViewHeaderHeader{
 			display: none !important; 
 		}
-		}
+		
 		.item2 > iframe {
 			height: 145vh;
     overflow: hidden;
