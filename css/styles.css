@@ -70,6 +70,7 @@ time, mark, audio, video {
 		background-color: black; 
 		color: white;
 	}
+
 	a{
 		text-decoration: none; 
 		color: inherit;
@@ -648,5 +649,9 @@ time, mark, audio, video {
 		.caption{
 			font-size: 10px; 
 		}
+		.big{
+		padding-top: 5vh; 
+		padding-bottom: 5vh;
+	}
 
 }	
