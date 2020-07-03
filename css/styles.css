@@ -402,6 +402,7 @@ time, mark, audio, video {
 				background-color: white; 
 				top: 0px;
 				    padding-bottom: 2vh;
+				    z-index: 10000; 
 			}
 			#first{
 				padding-top: 10vh;
