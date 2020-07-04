@@ -88,7 +88,7 @@ time, mark, audio, video {
 				padding-bottom: 3vh;
 				border-bottom: solid 1px black; 
 				font-family: franklin-reg;
-				text-align: justify;
+				/*text-align: justify;*/
 				font-size: 1.2vw;
 				line-height: 1.8vw; 
 			}
@@ -277,7 +277,10 @@ time, mark, audio, video {
 		  /*padding:10px !important*/
 		}
 		p{
-			text-align: justify;
+			/*text-align: justify;*/
+			 -webkit-hyphens: auto;
+		  	-ms-hyphens: auto;
+		  	hyphens: auto;
 		}
 		.tooltip{
 			cursor: pointer; 
