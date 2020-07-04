@@ -32,7 +32,7 @@
 
 <div class="row collapse slide" id="first">
 	<div class="inner-row">
-		<span class="headline" >INFO </span>
+		<p class="headline" >INFO </p>
 		<div class="grid-container-01">
   
 
@@ -51,7 +51,7 @@
 
   			<div class="item4">
   				
-  				<p>The <span class="italic">W.i.A? Institute</span> is a project about the word <span class="italic">art</span> – who uses it, who benefits from it, who has defined it, and how we will continue to use and define it in the future. La Tanya Autry says, “Museums are not neutral.” She is right. Neither is the word art. Access to the ideas and ownership of art start with access to the word itself. 
+  				<p>The <span class="italic">W.i.A? Institute</span> is a project about the word <span class="italic">Art</span> – who uses it, who benefits from it, who has defined it, and how we will continue to use and define it in the future. As cultural organizer, <a href="https://artstuffmatters.wordpress.com/" target="_blank">La Tanya Autry</a> says, “Museums are not neutral.” She is right. Neither is the word art. Access to the ideas and ownership of art start with access to the word itself. 
 		  				<br><br>
 					This initiative serves as an aggregate of projects of whose medium are voices. Voices will be expressed in different forms, although sometimes literal voices, collected through projects that begin to assemble a qualitative understanding and democratic reckoning of what art is as voiced by everyone. </p> 
   			</div>
@@ -69,23 +69,16 @@
 
 <div class="row collapse slide ">
 	<div class="inner-row">
-		<span class="headline">PROJECTS</span>
+		<p class="headline">PROJECTS</p>
 			<div class="grid-container-01">
   
-
-
-		  <div class="item1">
+		  	<div class="item1">
 		  			
-			</div>  
-		            
-            
-
-    		
+			</div>  		                          		
 
   			<div class="item4">
   				<span class="caption">Overview:</span><br>
 		  			<p>Projects are grouped in a number of classifications often garnering multiple classification tags. As a research-focused project-based institute we try to make upcoming projects available ahead of time and always archive finished projects. Classification tags help to inform users of the nature of a given project at a glance.
-
 					</p> 
   			</div>
   			<br>
@@ -371,11 +364,14 @@ var x = setInterval(function() {
 }, 1000);
 
 
-		$('.collapse').on('click',function(e){
-		  e.preventDefault();
-		  $(this).toggleClass('active');
-});
+// 		$('.collapse').on('click',function(e){
+// 		  e.preventDefault();
+// 		  $('this').toggleClass('active');
+// });
 
+$('.headline').click(function(e) {
+    $(e.target).closest('.collapse').toggleClass('active');
+});
 
 
 </script>

@@ -125,12 +125,18 @@ time, mark, audio, video {
 
 			}
 			.headline{
-				margin-left: 18.5vw; 
+				width: 100%;
+				padding-left: 18.5vw; 
 				font-size: 1.5vw; 
 				    line-height: 2vw;
+				    cursor: pointer; 
 				  /*font-family: franklin-gothic;
 				  font-size: 1.7vw; */
 			}
+			.headline:hover{
+				/*background-color: blue; */
+			}
+			
 			.tag{
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
@@ -240,7 +246,7 @@ time, mark, audio, video {
 
 		.collapse {
 		  border-bottom: 1px solid #000;
-		  cursor: pointer;
+		  /*cursor: pointer;*/
 		  /*padding: 10px;*/
 		  margin:0px;
 		  max-height: 2vh;
