@@ -678,7 +678,7 @@ time, mark, audio, video {
 			position: absolute;
 		}
 		#work{
-			/*background-image: url("../images/sky-03.jpg");*/
+			background-image: url("../images/sky-03.jpg");
 			background-size: cover;
 			margin-bottom: 5vh; 
 		}
