@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-align: justify;
 	
 }
 	@font-face {
@@ -135,8 +136,12 @@ time, mark, audio, video {
 			}
 			.headline:hover{
 				/*background-color: blue; */
+				opacity: 0.5; 
 			}
 			
+			p a:hover{
+				opacity: 0.5; 
+			}
 			.tag{
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
@@ -150,6 +155,12 @@ time, mark, audio, video {
 				right: 5vw;
 				z-index: 10000000;
 			}
+			#work{
+			/*background-image: url("../images/sky-03.jpg");*/
+			background-size: cover;
+			margin-bottom: 2vh; 
+			background-color: blanchedalmond; 
+		}
 			.prompt{
 				    font-size: 6vw;
 		    line-height: 4.5vw;
@@ -159,7 +170,7 @@ time, mark, audio, video {
 		    text-align: center;
 		    font-family: recoleta;
 		    /* background-color: black; */
-		    color: white; 
+		    color: black; 
 
 			}
 			#phone-number{
@@ -283,7 +294,7 @@ time, mark, audio, video {
 		  /*padding:10px !important*/
 		}
 		p{
-			/*text-align: justify;*/
+			text-align: justify;
 			 -webkit-hyphens: auto;
 		  	-ms-hyphens: auto;
 		  	hyphens: auto;
@@ -350,11 +361,7 @@ time, mark, audio, video {
 			width: 100%; 
 			position: absolute;
 		}
-		#work{
-			background-image: url("../images/sky-03.jpg");
-			background-size: cover;
-			margin-bottom: 2vh; 
-		}
+
 		.caption{
 			font-size: .8vw;
 			line-height: 2vw; 
@@ -671,7 +678,7 @@ time, mark, audio, video {
 			position: absolute;
 		}
 		#work{
-			background-image: url("../images/sky-03.jpg");
+			/*background-image: url("../images/sky-03.jpg");*/
 			background-size: cover;
 			margin-bottom: 5vh; 
 		}
