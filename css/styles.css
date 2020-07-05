@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	text-align: justify;
+	color: #000; 
 	
 }
 	@font-face {
@@ -75,6 +76,7 @@ time, mark, audio, video {
 	a{
 		text-decoration: none; 
 		color: inherit;
+		/*font-size: 1.5vw; */
 	}
 
 
@@ -146,7 +148,7 @@ time, mark, audio, video {
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
 				padding: .6vw .8vw .3vw .8vw;
-				font-size: .8vw; 
+				font-size: 1vw; 
 			}
 			
 			#login{
@@ -678,9 +680,10 @@ time, mark, audio, video {
 			position: absolute;
 		}
 		#work{
-			background-image: url("../images/sky-03.jpg");
+			/*background-image: url("../images/sky-03.jpg");*/
 			background-size: cover;
 			margin-bottom: 5vh; 
+			background-color: blanchedalmond; 
 		}
 		.caption{
 			font-size: 10px; 
