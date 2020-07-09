@@ -85,10 +85,13 @@ time, mark, audio, video {
 	a:hover{
 		opacity: 0.5;
 	}
-	audio{	position: absolute;
-    width: 47%;
-    left: 10%;
-    top: 0vh;
+	audio{	
+		position: absolute;
+		color: grey; 
+    width: 42%;
+    left: 15%;
+    top: 0.5vh;
+    height: 6vh;
     background-color: #f9f9f9;
 		}
 		audio::-webkit-media-controls-enclosure{
@@ -106,11 +109,17 @@ time, mark, audio, video {
 
 /*desktop styles*/
 @media screen and (min-width: 768px) {
+	.audio-track{
+		    padding-top: 2.8vh;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+	}
 	.tags{
 		position: absolute;
 		width: 30%; 
-		top: 4%; 
-		left: 2.5%; 
+		top: 2.5vh; 
+		/*left: 2.5%;*/ 
+		left: 60%;
 	}
 	#radio-title{
 		/*position: absolute;*/
@@ -146,7 +155,7 @@ time, mark, audio, video {
 		float: left;
 		width: 40%; 
 		height: 90vh; 
-		padding-top: 5vh; 
+		padding-top: 12vh; 
 		/*background-color: blue;*/
 
 	}
@@ -349,6 +358,7 @@ time, mark, audio, video {
 
 }
 #header{
+	position: fixed;
 	background-color: #f9f9f9;
 		height: 7vh; 
 		/*border-bottom: solid 2px black;*/
@@ -359,9 +369,19 @@ time, mark, audio, video {
 </head>
 <body>
 
-<!-- <div id="header">
-	<p class=" " >O que é Arte? Radio</p>
-	<audio controls>
+<div id="header">
+	<p class="audio-track show portuguese-project italic">O que é Arte? Radio Ad</p>
+	<p class="audio-track no-show spanish-project italic">¿Qué es arte? Radio Ad</p>
+	<p class="audio-track no-show english-project italic">What is Art? Radio Ad</p>
+	<audio class="show portuguese-project" controls>
+		 <source src="audio/test-01.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
+	<audio class="no-show english-project" controls>
+		 <source src="audio/test-01.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
+	<audio class="no-show spanish-project"controls>
 		 <source src="audio/test-01.mp3" type="audio/mpeg">
 					Your browser does not support the audio element.
 	</audio>
@@ -370,13 +390,13 @@ time, mark, audio, video {
 		<span class="tag participatory" id="">PARTICIPATORY</span>
 		<span id="demo" class="date tag"></span>
 	</div>
-</div>	 -->
-
+</div>	
+<!-- 
 <div class="tags">
 			<span class="tag active" id="">ACTIVE</span>
 		<span class="tag participatory" id="">PARTICIPATORY</span>
 		<span id="demo" class="date tag"></span>
-	</div>
+	</div> -->
 
 <div id="left">
 	<p id="headline"><span  class="typed-01"></span>?</p><br><br>
@@ -387,7 +407,7 @@ time, mark, audio, video {
 	<p class="links link-left underline" id="portuguese">Portuguese</p><p class="links link-center " id="english">English</p><p class="links " id="spanish"> Spanish</p>
 
 	<br><br><br><br><br>
-	<div id="english-project" class="no-show">
+	<div id="" class="no-show english-project">
 	<p >
 		What is art? 
 		<br><br>
@@ -397,17 +417,17 @@ time, mark, audio, video {
 		We want to hear your voice. The W.i.A institute? is collecting your thoughts and ideas about what you think art is. 
 	
 		<br><br><br>
-		<span class="participatory">To participate:</span>
+		<span class="">To participate:</span>
 		<br><br>
 		<ol>
-			<li>Call <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
+			<li>Call <a class="" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
 			<li>Leave a message telling us what you think Art is.</li>	
 			<li>Hangup</li>	
 
 		</ol>
 	</p>
 	</div>
-	<div id="spanish-project" class="no-show">
+	<div id="" class="no-show spanish-project">
 	<p >
 		¿Qué es arte?
 	<br><br>
@@ -425,17 +445,17 @@ Queremos escuchar tu voz. El W.i.A? Instituto está reuniendo pensamientos e ide
 		We want to hear your voice. The W.i.A institute is collecting your thoughts and ideas about what you think art is.  -->
 	
 		<br><br><br>
-		<span class="participatory">Para participar:</span>
+		<span class="">Para participar:</span>
 		<br><br>
 		<ol>
-			<li>Llama al <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
+			<li>Llama al <a class="" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
 			<li>Deja un mensaje contándonos qué crees que es el Arte.</li>	
 			<li>Cuelga</li>	
 
 		</ol>
 	</p>
 	</div>
-	<div id="portuguese-project" class="show">
+	<div id="" class="show portuguese-project">
 	<p >
 		O que é arte?
 		<br><br>
@@ -444,10 +464,10 @@ Queremos escuchar tu voz. El W.i.A? Instituto está reuniendo pensamientos e ide
 		Nós queremos ouvir sua voz. O instituto W.i.A? está coletando os seus pensamentos e ideias sobre o que você acha que é Arte. 
 	
 		<br><br><br>
-		<span class="participatory">Participe:</span>
+		<span class="">Participe:</span>
 		<br><br>
 		<ol>
-			<li>Ligue para <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
+			<li>Ligue para <a class="" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
 			<li>Deixe uma mensagem dizendo o que você acha que é Arte.</li>	
 			<li>Desligue</li>	
 
@@ -507,38 +527,38 @@ var x = setInterval(function() {
 
 $('#portuguese').click(function() {
     $(this).addClass('underline');
-    $('#portuguese-project').addClass('show');
-    $('#portuguese-project').removeClass('no-show');
+    $('.portuguese-project').addClass('show');
+    $('.portuguese-project').removeClass('no-show');
     $("#english").removeClass('underline');
-    $("#english-project").removeClass('show');
-    $("#english-project").addClass('no-show');
+    $(".english-project").removeClass('show');
+    $(".english-project").addClass('no-show');
     $("#spanish").removeClass('underline');
-    $("#spanish-project").removeClass('show');
-    $("#spanish-project").addClass('no-show');
+    $(".spanish-project").removeClass('show');
+    $(".spanish-project").addClass('no-show');
 
 });
 $('#english').click(function() {
     $(this).addClass('underline');
-    $('#english-project').addClass('show');
-    $('#english-project').removeClass('no-show');
+    $('.english-project').addClass('show');
+    $('.english-project').removeClass('no-show');
     $("#portuguese").removeClass('underline');
-    $("#portuguese-project").removeClass('show');
-    $("#portuguese-project").addClass('no-show');
+    $(".portuguese-project").removeClass('show');
+    $(".portuguese-project").addClass('no-show');
     $("#spanish").removeClass('underline');
     $("#spanish").removeClass('show');
-    $("#spanish-project").addClass('no-show');
+    $(".spanish-project").addClass('no-show');
 });
 $('#spanish').click(function() {
     $(this).addClass('underline');
-    $('#spanish-project').removeClass('no-show');
-    $('#spanish-project').addClass('show');
+    $('.spanish-project').removeClass('no-show');
+    $('.spanish-project').addClass('show');
     $("#portuguese").removeClass('underline');
-    $("#portuguese-project").addClass('no-show');
-    $("#portuguese-project").removeClass('show');
+    $(".portuguese-project").addClass('no-show');
+    $(".portuguese-project").removeClass('show');
 
     $("#english").removeClass('underline');
-    $("#english-project").removeClass('show');
-    $("#english-project").addClass('no-show');
+    $(".english-project").removeClass('show');
+    $(".english-project").addClass('no-show');
 });
 
 $(".typed-01").typed({
