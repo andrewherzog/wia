@@ -85,14 +85,7 @@ time, mark, audio, video {
 	a:hover{
 		opacity: 0.5;
 	}
-	audio{	
-		position: absolute;
-		color: grey; 
-    width: 42%;
-    left: 15%;
-    top: 0.5vh;
-    height: 6vh;
-    background-color: #f9f9f9;
+	
 		}
 		audio::-webkit-media-controls-enclosure{
 			background-color: #f9f9f9;
@@ -114,6 +107,15 @@ time, mark, audio, video {
     padding-left: 2vw;
     font-size: 1.2vw;
 	}
+	audio{	
+		position: absolute;
+		color: grey; 
+    width: 42%;
+    left: 15%;
+    top: 0.5vh;
+    height: 6vh;
+    background-color: #f9f9f9;
+}
 	.tags{
 		position: absolute;
 		width: 30%; 
@@ -224,22 +226,49 @@ time, mark, audio, video {
 			.mobile {
 				display: none; 
 			}
+			#header{
+	position: fixed;
+	background-color: #f9f9f9;
+		height: 7vh; 
+		/*border-bottom: solid 2px black;*/
+		width: 100%; 
+	}	
 		}
 
 
 /*mobile styles*/
 
 @media screen and (max-width: 769px) {
+	#header{
+	position: fixed;
+	background-color: #f9f9f9;
+		height: 16vh; 
+		/*border-bottom: solid 2px black;*/
+		width: 100%; 
+	}	
+	.audio-track{
+		    margin-top: 16%;
+    margin-left: 5%;
+	}
+	audio{	
+		position: absolute;
+    color: grey;
+    width: 96%;
+    /* left: 5%; */
+    top: 10vh;
+    height: 6vh;
+    background-color: #f9f9f9;
+}
 	.tags{
 		position: absolute;
-    width: 85%;
-    top: 2.5%;
-    left: 9%;
+    width: 90%;
+    top: 13.5%;
+    left: 5%;
 	}
 
 
 	#left{
-		    padding-top: 10vh;
+		    padding-top: 20vh;
 		display: block;
 		float: left;
 		width: 100%; 
@@ -357,13 +386,7 @@ time, mark, audio, video {
 	}
 
 }
-#header{
-	position: fixed;
-	background-color: #f9f9f9;
-		height: 7vh; 
-		/*border-bottom: solid 2px black;*/
-		width: 100%; 
-	}		
+	
 </style>
 
 </head>
