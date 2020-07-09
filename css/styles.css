@@ -18,6 +18,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-align: justify;
+	color: #000; 
 	
 }
 	@font-face {
@@ -74,6 +76,7 @@ time, mark, audio, video {
 	a{
 		text-decoration: none; 
 		color: inherit;
+		/*font-size: 1.5vw; */
 	}
 
 
@@ -88,7 +91,7 @@ time, mark, audio, video {
 				padding-bottom: 3vh;
 				border-bottom: solid 1px black; 
 				font-family: franklin-reg;
-				text-align: justify;
+				/*text-align: justify;*/
 				font-size: 1.2vw;
 				line-height: 1.8vw; 
 			}
@@ -125,17 +128,27 @@ time, mark, audio, video {
 
 			}
 			.headline{
-				margin-left: 18.5vw; 
+				width: 100%;
+				padding-left: 18.5vw; 
 				font-size: 1.5vw; 
 				    line-height: 2vw;
+				    cursor: pointer; 
 				  /*font-family: franklin-gothic;
 				  font-size: 1.7vw; */
+			}
+			.headline:hover{
+				/*background-color: blue; */
+				opacity: 0.5; 
+			}
+			
+			p a:hover{
+				opacity: 0.5; 
 			}
 			.tag{
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
 				padding: .6vw .8vw .3vw .8vw;
-				font-size: .8vw; 
+				font-size: 1vw; 
 			}
 			
 			#login{
@@ -144,6 +157,12 @@ time, mark, audio, video {
 				right: 5vw;
 				z-index: 10000000;
 			}
+			#work{
+			/*background-image: url("../images/sky-03.jpg");*/
+			background-size: cover;
+			margin-bottom: 2vh; 
+			background-color: blanchedalmond; 
+		}
 			.prompt{
 				    font-size: 6vw;
 		    line-height: 4.5vw;
@@ -153,7 +172,7 @@ time, mark, audio, video {
 		    text-align: center;
 		    font-family: recoleta;
 		    /* background-color: black; */
-		    color: white; 
+		    color: black; 
 
 			}
 			#phone-number{
@@ -248,7 +267,7 @@ time, mark, audio, video {
 
 		.collapse {
 		  border-bottom: 1px solid #000;
-		  cursor: pointer;
+		  /*cursor: pointer;*/
 		  /*padding: 10px;*/
 		  margin:0px;
 		  max-height: 2vh;
@@ -286,6 +305,9 @@ time, mark, audio, video {
 		}
 		p{
 			text-align: justify;
+			 -webkit-hyphens: auto;
+		  	-ms-hyphens: auto;
+		  	hyphens: auto;
 		}
 		.tooltip{
 			cursor: pointer; 
@@ -349,11 +371,7 @@ time, mark, audio, video {
 			width: 100%; 
 			position: absolute;
 		}
-		#work{
-			background-image: url("../images/sky-03.jpg");
-			background-size: cover;
-			margin-bottom: 2vh; 
-		}
+
 		.caption{
 			font-size: .8vw;
 			line-height: 2vw; 
@@ -670,9 +688,10 @@ time, mark, audio, video {
 			position: absolute;
 		}
 		#work{
-			background-image: url("../images/sky-03.jpg");
+			/*background-image: url("../images/sky-03.jpg");*/
 			background-size: cover;
 			margin-bottom: 5vh; 
+			background-color: blanchedalmond; 
 		}
 		.caption{
 			font-size: 10px; 
