@@ -88,40 +88,50 @@ time, mark, audio, video {
 	
 		}
 		audio::-webkit-media-controls-enclosure{
-			background-color: #f9f9f9;
+			background-color: white;
 			border-radius: 0px; 
 			color: white; 
 		}
 		audio::-webkit-media-controls-enclosure{
-			background-color: #f9f9f9; 
+			background-color: white; 
 			border-radius: 0px; 
 			color: white; 
 		}
 		audio:focus { outline: none; }
 
+		
+
 
 /*desktop styles*/
 @media screen and (min-width: 768px) {
 	.audio-track{
-		    padding-top: 2.8vh;
-    padding-left: 2vw;
+		    padding-top: 3.8vh;
+    padding-left: 0vw;
     font-size: 1.2vw;
 	}
 	audio{	
-		position: absolute;
+/*		position: absolute;
 		color: grey; 
     width: 42%;
     left: 15%;
     top: 0.5vh;
     height: 6vh;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9;*/
+
+  
+    /* color: grey; */
+      width: 93%;
+    margin-left: -3%;
+    margin-top: 0.5vh;
+    height: 4vh;
+    /* background-color: red;*/
 }
 	.tags{
 		position: absolute;
 		width: 30%; 
 		top: 2.5vh; 
 		/*left: 2.5%;*/ 
-		left: 60%;
+		left: 2.5%;
 	}
 	#radio-title{
 		/*position: absolute;*/
@@ -157,7 +167,7 @@ time, mark, audio, video {
 		float: left;
 		width: 40%; 
 		height: 90vh; 
-		padding-top: 12vh; 
+		padding-top: 3vh; 
 		/*background-color: blue;*/
 
 	}
@@ -228,8 +238,8 @@ time, mark, audio, video {
 			}
 			#header{
 	position: fixed;
-	background-color: #f9f9f9;
-		height: 7vh; 
+	/*background-color: #f9f9f9;*/
+		/*height: 7vh; */
 		/*border-bottom: solid 2px black;*/
 		width: 100%; 
 	}	
@@ -240,9 +250,9 @@ time, mark, audio, video {
 
 @media screen and (max-width: 769px) {
 	#header{
-	position: fixed;
-	background-color: #f9f9f9;
-		height: 16vh; 
+	/*position: fixed;*/
+	/*background-color: #f9f9f9;*/
+		/*height: 16vh; */
 		/*border-bottom: solid 2px black;*/
 		width: 100%; 
 	}	
@@ -251,7 +261,7 @@ time, mark, audio, video {
     margin-left: 5%;
 	}
 	audio{	
-		position: absolute;
+		/*position: absolute;*/
     color: grey;
     width: 96%;
     /* left: 5%; */
@@ -260,25 +270,17 @@ time, mark, audio, video {
     background-color: #f9f9f9;
 }
 
-audio::-webkit {
-		position: absolute;
-    color: grey;
-    width: 96%;
-    /* left: 5%; */
-    top: 9vh;
-    height: 6vh;
-    background-color: #f9f9f9;
-}
+
 	.tags{
 		position: absolute;
     width: 90%;
-    top: 13.5%;
-    left: 5%;
+    top: 3%;
+    left: 8%;
 	}
 
 
 	#left{
-		    padding-top: 20vh;
+		    padding-top: 15vh;
 		display: block;
 		float: left;
 		width: 100%; 
@@ -396,126 +398,6 @@ audio::-webkit {
 	}
 
 }
-
-.audio-player {
-  height: 50px;
-  width: 40%;
-  background: #444;
-  color: white;
-  overflow: hidden;
-
-  display: grid;
-  grid-template-rows: 6px auto;
-  .timeline {
-    background: white;
-    width: 100%;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 2px 10px 0 #0008;
-    .progress {
-      background: coral;
-      width: 0%;
-      height: 100%;
-      transition: 0.25s;
-    }
-  }
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0 20px;
-
-    > * {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .toggle-play {
-      &.play {
-        cursor: pointer;
-        position: relative;
-        left: 0;
-        height: 0;
-        width: 0;
-        border: 7px solid #0000;
-        border-left: 13px solid white;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      &.pause {
-        height: 15px;
-        width: 20px;
-        cursor: pointer;
-        position: relative;
-        &:before {
-          position: absolute;
-          top: 0;
-          left: 0px;
-          background: white;
-          content: "";
-          height: 15px;
-          width: 3px;
-        }
-        &:after {
-          position: absolute;
-          top: 0;
-          right: 8px;
-          background: white;
-          content: "";
-          height: 15px;
-          width: 3px;
-        }
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-    .time {
-      display: flex;
-
-      > * {
-        padding: 2px;
-      }
-    }
-    .volume-container {
-      cursor: pointer;
-      .volume-button {
-        height: 26px;
-        display: flex;
-        align-items: center;
-        .volume {
-          transform: scale(0.7);
-        }
-      }
-      
-      position: relative;
-      z-index: 2;
-      .volume-slider {
-        position: absolute;
-        left: -3px; top: 15px;
-        z-index: -1;
-        width: 0;
-        height: 15px;
-        background: white;
-        box-shadow: 0 0 20px #000a;
-        transition: .25s;
-        .volume-percentage {
-          background: coral;
-          height: 100%;
-          width: 75%;
-        }
-      }
-      &:hover {
-        .volume-slider {
-          left: -123px;
-          width: 120px;
-        }
-      }
-    }
-  }
-}
-
 	
 </style>
 
@@ -523,57 +405,16 @@ audio::-webkit {
 <body>
 
 <div id="header">
-	<p class="audio-track show portuguese-project italic">O que é Arte? Radio Ad</p>
-	<p class="audio-track no-show spanish-project italic">¿Qué es arte? Radio Ad</p>
-	<p class="audio-track no-show english-project italic">What is Art? Radio Ad</p>
 
-	<div style="width: 50px; height: 50px;"></div>
-<div class="audio-player">
-  <div class="timeline">
-    <div class="progress"></div>
-  </div>
-  <div class="controls">
-    <div class="play-container">
-      <div class="toggle-play play">
-    </div>
-    </div>
-    <div class="time">
-      <div class="current">0:00</div>
-      <div class="divider">/</div>
-      <div class="length"></div>
-    </div>
-    <div class="name">Music Song</div>
-<!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
-    <div class="volume-container">
-      <div class="volume-button">
-        <div class="volume icono-volumeMedium"></div>
-      </div>
-      
-      <div class="volume-slider">
-        <div class="volume-percentage"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-	<audio class="show portuguese-project" controls>
-		 <source src="audio/test-01.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-	</audio>
-	<audio class="no-show english-project" controls>
-		 <source src="audio/radio-english-02.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-	</audio>
-	<audio class="no-show spanish-project"controls>
-		 <source src="audio/radio-english.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-	</audio>
 	<div class="tags">
 			<span class="tag active" id="">ACTIVE</span>
 		<span class="tag participatory" id="">PARTICIPATORY</span>
 		<span id="demo" class="date tag"></span>
 	</div>
+	
+
+
+	
 </div>	
 <!-- 
 <div class="tags">
@@ -591,6 +432,8 @@ audio::-webkit {
 	<p class="links link-left underline" id="portuguese">Portuguese</p><p class="links link-center " id="english">English</p><p class="links " id="spanish"> Spanish</p>
 
 	<br><br><br><br><br>
+	
+	
 	<div id="" class="no-show english-project">
 	<p >
 		What is art? 
@@ -658,7 +501,25 @@ Queremos escuchar tu voz. El W.i.A? Instituto está reuniendo pensamientos e ide
 		</ol>
 
 	</p>
+	
 </div>
+<p class="audio-track show portuguese-project italic">O que é Arte? Radio Ad </p>
+	<p class="audio-track no-show spanish-project italic">¿Qué es arte? Radio Ad</p>
+	<p class="audio-track no-show english-project italic">What is Art? Radio Ad</p>
+
+
+	<audio class="show portuguese-project" controls>
+		 <source src="audio/test-01.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
+	<audio class="no-show english-project" controls>
+		 <source src="audio/radio-english-02.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
+	<audio class="no-show spanish-project"controls>
+		 <source src="audio/test-01.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
 </div>
 <div id="bottom">
 	<ul>
@@ -674,12 +535,27 @@ Queremos escuchar tu voz. El W.i.A? Instituto está reuniendo pensamientos e ide
 				<span class="italic"> O que é Arte? What is Art? Que es Arte?</span>, 2020<br>
 				Commissioned by <a href="https://www.walktalkazores.org/en" target="_blank">Walk&Talk - Arts Festival</a></p>
 		</li>
+
 	</ul>
+
 	
 </div>
 
 <script type="text/javascript">
-	
+var myAudio01 = document.getElementById("myAudio01");
+var myAudio02 = document.getElementById("myAudio02");
+
+function togglePlay01() {
+  return myAudio01.paused ? myAudio01.play() : myAudio01.pause();
+  
+
+};
+function togglePlay02() {
+  return myAudio02.paused ? myAudio02.play() : myAudio02.pause();
+};
+
+
+
 // Set the date we're counting down to
 var countDownDate = new Date("July 19, 2020 12:00:00").getTime();
 
@@ -812,95 +688,6 @@ $(".typed-01").typed({
 		// callback for reset
 		resetCallback: function() {}
 	});
-
-const audioPlayer = document.querySelector(".audio-player");
-const audio = new Audio(
-  "audio/radio-english.mp3"
-);
-//credit for song: Adrian kreativaweb@gmail.com
-
-console.dir(audio);
-
-audio.addEventListener(
-  "loadeddata",
-  () => {
-    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-      audio.duration
-    );
-    audio.volume = .75;
-  },
-  false
-);
-
-//click on timeline to skip around
-const timeline = audioPlayer.querySelector(".timeline");
-timeline.addEventListener("click", e => {
-  const timelineWidth = window.getComputedStyle(timeline).width;
-  const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
-  audio.currentTime = timeToSeek;
-}, false);
-
-//click volume slider to change volume
-const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
-volumeSlider.addEventListener('click', e => {
-  const sliderWidth = window.getComputedStyle(volumeSlider).width;
-  const newVolume = e.offsetX / parseInt(sliderWidth);
-  audio.volume = newVolume;
-  audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
-}, false)
-
-//check audio percentage and update time accordingly
-setInterval(() => {
-  const progressBar = audioPlayer.querySelector(".progress");
-  progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-  audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-    audio.currentTime
-  );
-}, 500);
-
-//toggle between playing and pausing on button click
-const playBtn = audioPlayer.querySelector(".controls .toggle-play");
-playBtn.addEventListener(
-  "click",
-  () => {
-    if (audio.paused) {
-      playBtn.classList.remove("play");
-      playBtn.classList.add("pause");
-      audio.play();
-    } else {
-      playBtn.classList.remove("pause");
-      playBtn.classList.add("play");
-      audio.pause();
-    }
-  },
-  false
-);
-
-audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
-  const volumeEl = audioPlayer.querySelector(".volume-container .volume");
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeEl.classList.remove("icono-volumeMedium");
-    volumeEl.classList.add("icono-volumeMute");
-  } else {
-    volumeEl.classList.add("icono-volumeMedium");
-    volumeEl.classList.remove("icono-volumeMute");
-  }
-});
-
-//turn 128 seconds into 2:08
-function getTimeCodeFromNum(num) {
-  let seconds = parseInt(num);
-  let minutes = parseInt(seconds / 60);
-  seconds -= minutes * 60;
-  const hours = parseInt(minutes / 60);
-  minutes -= hours * 60;
-
-  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
-    seconds % 60
-  ).padStart(2, 0)}`;
-}
 
 </script>
 </div>
