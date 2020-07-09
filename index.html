@@ -85,14 +85,38 @@ time, mark, audio, video {
 	a:hover{
 		opacity: 0.5;
 	}
+	audio{	position: absolute;
+    width: 47%;
+    left: 10%;
+    top: 0vh;
+    background-color: #f9f9f9;
+		}
+		audio::-webkit-media-controls-enclosure{
+			background-color: #f9f9f9;
+			border-radius: 0px; 
+			color: white; 
+		}
+		audio::-webkit-media-controls-enclosure{
+			background-color: #f9f9f9; 
+			border-radius: 0px; 
+			color: white; 
+		}
+		audio:focus { outline: none; }
+
 
 /*desktop styles*/
 @media screen and (min-width: 768px) {
-	#tags{
-		position: fixed;
+	.tags{
+		position: absolute;
 		width: 30%; 
-		top: 2.5%; 
+		top: 4%; 
 		left: 2.5%; 
+	}
+	#radio-title{
+		/*position: absolute;*/
+		width: 30%; 
+		margin-top: -2.5%; 
+		margin-left: 60%; 
 	}
 	#left{
 		display: block;
@@ -122,7 +146,7 @@ time, mark, audio, video {
 		float: left;
 		width: 40%; 
 		height: 90vh; 
-		padding-top: 10vh; 
+		padding-top: 5vh; 
 		/*background-color: blue;*/
 
 	}
@@ -179,7 +203,7 @@ time, mark, audio, video {
 	    margin-left: 10%;
 	}
 	#logo{
-			width: 35%; 
+			width: 30%; 
 		}
 .tag{
 				font-family: franklin-reg; 
@@ -321,17 +345,37 @@ time, mark, audio, video {
 		text-align: center;
 		color: grey;
 	}
-}		
+
+}
+#header{
+	background-color: #f9f9f9;
+		height: 7vh; 
+		/*border-bottom: solid 2px black;*/
+		width: 100%; 
+	}		
 </style>
 
 </head>
 <body>
-<div id="tags">
-		<span class="tag active" id="">ACTIVE</span>
-	<span class="tag participatory" id="">PARTICIPATORY</span>
-	<span id="demo" class="date tag"></span>
-</div>
 
+<!-- <div id="header">
+	<p class=" " >O que é Arte? Radio</p>
+	<audio controls>
+		 <source src="audio/test-01.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+	</audio>
+	<div class="tags">
+			<span class="tag active" id="">ACTIVE</span>
+		<span class="tag participatory" id="">PARTICIPATORY</span>
+		<span id="demo" class="date tag"></span>
+	</div>
+</div>	 -->
+
+<div class="tags">
+			<span class="tag active" id="">ACTIVE</span>
+		<span class="tag participatory" id="">PARTICIPATORY</span>
+		<span id="demo" class="date tag"></span>
+	</div>
 
 <div id="left">
 	<p id="headline"><span  class="typed-01"></span>?</p><br><br>
@@ -339,10 +383,10 @@ time, mark, audio, video {
 </div>
 
 <div id="right">
-	<p class="links link-left" id="portuguese">Portuguese</p><p class="links link-center underline" id="english">English</p><p class="links " id="spanish"> Spanish</p>
+	<p class="links link-left underline" id="portuguese">Portuguese</p><p class="links link-center " id="english">English</p><p class="links " id="spanish"> Spanish</p>
 
-	<br><br><br><br><br><br><br>
-	<div id="english-project" class="show">
+	<br><br><br><br><br>
+	<div id="english-project" class="no-show">
 	<p >
 		What is art? 
 		<br><br>
@@ -364,42 +408,47 @@ time, mark, audio, video {
 	</div>
 	<div id="spanish-project" class="no-show">
 	<p >
-		Que is art? 
+		¿Qué es arte?
+	<br><br>
+¿Debería estar en un museo? ¿o en una galería?  ¿estar en un pedestal? ¿tener un marco? ¿es algo que sientes? ¿es algo que oyes? ¿es algo que piensas? ¿acaso es algo que comes? ¿es un objeto? ¿es trabajo? ¿es ocio? ¿es valioso? ¿o tal vez algo sin valor? ¿es hermoso? ¿es feo? ¿es útil? ¿o es inútil? ¿quién lo hace? ¿quién lo tiene? ¿es algo valioso? ¿o no tiene valor?
+	<br><br>
+Queremos escuchar tu voz. El W.i.A? Instituto está reuniendo pensamientos e ideas como el tuyo, acerca de lo que se cree que es el arte.
+
+
+		<!-- Que is art? 
 		<br><br>
 		Does it have to be in a museum? or a gallery? on a pedestal? in a frame? is it something you feel? something you hear? something you think? something you eat? is it an object? is it work? is it leisure? is it valuable? or worthless? is it beautiful? is it Ugly? is it useful? or useless? who makes it? who owns? is it valuable? or worthless?
 		<br><br>	
 		What is art? 
 		<br><br>
-		We want to hear your voice. The W.i.A institute is collecting your thoughts and ideas about what you think art is. 
+		We want to hear your voice. The W.i.A institute is collecting your thoughts and ideas about what you think art is.  -->
 	
 		<br><br><br>
-		<span class="participatory">To participate:</span>
+		<span class="participatory">Para participar:</span>
 		<br><br>
 		<ol>
-			<li>Call <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
-			<li>Leave a message telling us what you think Art is.</li>	
-			<li>Hangup</li>	
+			<li>Llama al <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
+			<li>Deja un mensaje contándonos qué crees que es el Arte.</li>	
+			<li>Cuelga</li>	
 
 		</ol>
 	</p>
 	</div>
-	<div id="portuguese-project" class="no-show">
+	<div id="portuguese-project" class="show">
 	<p >
-		o Que es art? 
+		O que é arte?
 		<br><br>
-		Does it have to be in a museum? or a gallery? on a pedestal? in a frame? is it something you feel? something you hear? something you think? something you eat? is it an object? is it work? is it leisure? is it valuable? or worthless? is it beautiful? is it Ugly? is it useful? or useless? who makes it? who owns? is it valuable? or worthless?
-		<br><br>	
-		What is art? 
+		Tem que estar em um museu? ou numa galeria? estar num pedestal? em um quadro? é algo que você sente? algo que você ouve? é algo que você acha? algo que você come? é um objeto? é trabalho? é lazer? é valioso? ou não tem valor? é lindo? ou é feio? é útil? ou inútil? quem o faz? quem o tem? é valioso? ou inútil?
 		<br><br>
-		We want to hear your voice. The W.i.A institute is collecting your thoughts and ideas about what you think art is. 
+		Nós queremos ouvir sua voz. O instituto W.i.A? está coletando os seus pensamentos e ideias sobre o que você acha que é Arte. 
 	
 		<br><br><br>
-		<span class="participatory">To participate:</span>
+		<span class="participatory">Participe:</span>
 		<br><br>
 		<ol>
-			<li>Call <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
-			<li>Leave a message telling us what you think Art is.</li>	
-			<li>Hangup</li>	
+			<li>Ligue para <a class="active" href="tel:+1-401-227-7636">+1 401-227-7636</a></li>
+			<li>Deixe uma mensagem dizendo o que você acha que é Arte.</li>	
+			<li>Desligue</li>	
 
 		</ol>
 
@@ -416,8 +465,8 @@ time, mark, audio, video {
 		<li><br>
 			
 				<p>
-					Featured project: <br><br>Andrew Herzog<br>
-				<span class="italic">What is Art? O que é Arte? Que es Arte?</span>, 2020<br>
+					Featured project: <br><br><!-- Andrew Herzog<br> -->
+				<span class="italic"> O que é Arte? What is Art? Que es Arte?</span>, 2020<br>
 				Commissioned by <a href="https://www.walktalkazores.org/en" target="_blank">Walk&Talk - Arts Festival</a></p>
 		</li>
 	</ul>
