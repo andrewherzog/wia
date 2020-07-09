@@ -19,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	text-align: justify;
-	color: #000; 
+	/*color: #000; */
 	
 }
 	@font-face {
@@ -34,6 +34,11 @@ time, mark, audio, video {
 	@font-face {
   font-family: recoleta;
   src: url(../fonts/RecoletaRegular.otf);
+}
+
+	@font-face {
+  font-family: inconsolata;
+  src: url(../fonts/Inconsolata-VariableFont_wdth,wght.ttf);
 }
 .italic{
 	 	font-style: italic;
@@ -90,6 +95,7 @@ time, mark, audio, video {
 				padding-top: 3vh;
 				padding-bottom: 3vh;
 				border-bottom: solid 1px black; 
+				/*font-family: inconsolata;*/
 				font-family: franklin-reg;
 				/*text-align: justify;*/
 				font-size: 1.2vw;
@@ -133,6 +139,7 @@ time, mark, audio, video {
 				font-size: 1.5vw; 
 				    line-height: 2vw;
 				    cursor: pointer; 
+				    font-family: franklin-reg;
 				  /*font-family: franklin-gothic;
 				  font-size: 1.7vw; */
 			}
@@ -145,12 +152,16 @@ time, mark, audio, video {
 				opacity: 0.5; 
 			}
 			.tag{
+				/*font-family: inconsolata;*/
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
 				padding: .6vw .8vw .3vw .8vw;
 				font-size: 1vw; 
 			}
-			
+			p{
+				  /*font-family: inconsolata;*/
+
+			}
 			#login{
 				position: fixed;
 				top: 2.5vh; 
@@ -158,30 +169,52 @@ time, mark, audio, video {
 				z-index: 10000000;
 			}
 			#work{
-			/*background-image: url("../images/sky-03.jpg");*/
+			background-image: url("../images/sky-03.jpg");
 			background-size: cover;
 			margin-bottom: 2vh; 
 			background-color: blanchedalmond; 
+			color: white;
 		}
+			#work img{
+				width: 100%; 
+			}
+			#work video{
+				width: 100%; 
+				/*max-height: 100vh; */
+			}
 			.prompt{
-				    font-size: 6vw;
-		    line-height: 4.5vw;
+				    font-size: 6.8vw;
+		    line-height: 3.5vw;
 		    /* height: 100vh; */
-		    padding-top: 30vh;
-		    padding-bottom: 30vh;
+		    /*padding-top: 30vh;
+		    padding-bottom: 30vh;*/
+		    padding: 5vh;
 		    text-align: center;
 		    font-family: recoleta;
 		    /* background-color: black; */
-		    color: black; 
+		    color: white; 
 
 			}
 			#phone-number{
-				    font-size: 3.5vw;
-    				line-height: 3vw;
+				    font-size: 2vw;
+    line-height: 2.8vw;
+    text-align: justify;
+    font-family: recoleta; 
 			}
+
 			#phone-number-01{
-				    font-size: 3.5vw;
-    				line-height: 3vw;
+				   font-size: 4vw;
+    line-height: 6vw;
+    text-align: center;
+    font-family: recoleta;
+    				font-family: recoleta; 
+			}
+			#voice{
+				   font-size: 3.6vw;
+    line-height: 5vw;
+    text-align: center;
+    font-family: recoleta;
+    				font-family: recoleta; 
 			}
 			.item1 { 
 				grid-area: tags; 
@@ -227,7 +260,7 @@ time, mark, audio, video {
 
 		.grid-container > div {
 		  /*background-color: rgba(255, 255, 255, 0.8);*/
-		  padding: 20px 0;
+		  /*padding: 3vw 3vw;*/
 		      padding-right: 1vw;
 		  
 		}
@@ -369,7 +402,7 @@ time, mark, audio, video {
 			line-height: 2vw; 
 		}
 		.call-now{
-			width: 45.5%;
+			width: 45.1%;
     display: inline-block;
     float: left;
      
@@ -394,7 +427,20 @@ time, mark, audio, video {
     width: 100%;
 		}
 
-
+		.big{
+		padding-top: 3vh; 
+		padding-bottom: 3vh;
+	}
+	.full{
+		width: 100%;
+		padding-top: 3vh; 
+		padding-bottom: 3vh;
+	}
+	.full-input{
+		padding-top: 3vh; 
+		padding-bottom: 3vh;
+		width: 96.9%; 
+	}
 }
 
 /*mobile styles*/
@@ -669,7 +715,7 @@ time, mark, audio, video {
 			color: white; 
 		}
 		::-webkit-media-controls-enclosure{
-			background-color: white; 
+			/*background-color: white; */
 			border-radius: 0px; 
 			color: white; 
 		}
@@ -680,10 +726,11 @@ time, mark, audio, video {
 			position: absolute;
 		}
 		#work{
+			padding: 4vw;
 			/*background-image: url("../images/sky-03.jpg");*/
 			background-size: cover;
 			margin-bottom: 5vh; 
-			background-color: blanchedalmond; 
+			/*background-color: blanchedalmond; */
 		}
 		.caption{
 			font-size: 10px; 
