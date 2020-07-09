@@ -216,6 +216,14 @@ time, mark, audio, video {
 		.grid-container-01 > div {
 		  /*background-color: rgba(255, 255, 255, 0.8);*/
 		  padding: 20px 0;
+		   padding-right: 1vw;
+		  
+		}
+
+		.grid-container-03 > div {
+		  /*background-color: rgba(255, 255, 255, 0.8);*/
+		  padding: 20px 0;
+		   padding-right: 1vw;
 		  
 		}
 
