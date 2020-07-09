@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,6 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<meta name="description" content="W.i.A? Institute | A project about the word Art">
-		<script src="http://hillarychurchill.com/js/typed.custom.js"></script>
 
  	  <meta name="author"              content="W.i.A? Institute">
 	  <meta property="og:url"          content="wiainstitute.org">
@@ -30,9 +30,9 @@
 	  <meta property="og:image:width" content="1200" class="jsx-4238479239"/>
 		<meta property="og:image:height" content="600" class="jsx-4238479239"/>
 
-<style type="text/css">
 
-				html, body, div, span, applet, object, iframe,
+<style type="text/css">
+			html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -53,7 +53,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	text-align: justify;
 	color: #000; 
-	font-family: franklin-reg;
 	
 }
 	@font-face {
@@ -85,174 +84,134 @@ time, mark, audio, video {
 	a:hover{
 		opacity: 0.5;
 	}
-
 /*desktop styles*/
 @media screen and (min-width: 768px) {
-	#tags{
-		position: fixed;
-		width: 30%; 
-		top: 2.5%; 
-		left: 2.5%; 
+	body{
+		overflow:hidden;
 	}
-	#left{
-		display: block;
-		float: left;
-		width: 60%; 
-		height: 100vh; 
-		/*background-color: red;*/
 
-	}
-	#headline{
-		width: 100%; 
-		text-align: center;
-		font-size: 9vw; 
-		line-height: 15vw; 
-		margin-top: 8vw; 
-	}
-	#phone-number{
-		width: 100%; 
-		text-align: center;
-		font-size: 7vh;
-		line-height: 8vw; 
-		
-	}
-	#right{
-		display: block;
-		float: left;
-		width: 40%; 
-		height: 90vh; 
-		padding-top: 10vh; 
-		/*background-color: blue;*/
-
-	}
-	#right p {
+	#first-third p{
 		font-family: franklin-reg;
-		width: 80%; 
-		font-size: 1.2vw; 
-		line-height: 1.9vw; 
+		font-size: .9vw; 
+		line-height: 1.4vw; 
 	}
-	#right ol{
+	#second-third p{
+		font-family: franklin-reg;
+		font-size: .9vw; 
+		line-height: 1.4vw; 
+	}
+	#third-third p{
+		font-family: franklin-reg;
+		
+		font-size: 1.2vw; 
+		line-height: 2vw; 
+	}
+	#third-third ol{
 		font-family: franklin-reg;
 		margin-left: 10%; 
 		font-size: 1.2vw; 
-		line-height: 2.2vw;
+		line-height: 2vw; 
 	}
-	#right .links{
-		width: 15%; 
-		text-align: center;
-		margin-right: 18%; 
+	#third-third .links {
+		margin-right: 20%; 
 		display: block; 
 		float: left;
-		font-size: 1.2vw; 
-		line-height: 1.9vw;
+		font-size: .9vw; 
+		line-height: 1.4vw;
 		cursor: pointer; 
 	}
-	.underline{
-		border-bottom: solid 2px black; 
+	.links:hover{
+		opacity: 0.5;
 	}
-	#bottom{
-		display: block;
-		float: left;
-		width: 100%; 
-		height: 20vh; 
-		padding-top: 3%; 
-		background-color: #f2f2f2; 
-
+	.sub{
+		font-size: .5vw; 
 	}
-	#bottom p {
-		font-size: .9vw; 
-		line-height: 1.3vw; 
-	}
-	.no-show{
-		display: none; 
-	}
-	#bottom ul{
-		width: 60%; 
-		/*padding-top: 10%; */
-
-	}
-	#bottom ul li{
-		display: block;
-		float: left;
-		width: 40%; 
-		margin-left: 5%; 
-	}
-	#logo{
-			width: 50%; 
-		}
-.tag{
+	.tag{
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
 				padding: .6vw .8vw .3vw .8vw;
 				font-size: .85vw; 
 				margin-right: 1%; 
 			}
-			.mobile {
-				display: none; 
+			#first-third{
+				width: 22.5%;
+    			padding: 2.25%; 
+				margin-top: 1.5%;
+				display: block;
+				float: left; 
 			}
+			#second-third{
+				width: 22.5%;
+    			padding: 2.25%;
+			    padding-top: 5%;
+			    display: block;
+			    float: left;
+			    height: 87vh;
+			    background-color: #f9f9f9;
+			}
+			#third-third{
+				width: 37%;
+				/*margin-left: 2.5%; */
+				margin-top: 0%; 
+				display: block;
+				float: left;
+				background-color: #f2f2f2;
+				padding: 4.5%; 
+				height: 84vh;
+			}
+			#third-third img{
+				width: 100%; 
+			}
+
+	
+		#logo{
+			width: 60%; 
 		}
 
+
+	.underline{
+		border-bottom: solid 2px black; 
+	}
+	.no-show{
+		display: none; 
+	}
+	#copy{
+		position: absolute;
+    bottom: 10px;
+    /* width: 100%; */
+    font-size: .8vw !important;
+    text-align: right;
+	}
+}
 
 /*mobile styles*/
 
 @media screen and (max-width: 769px) {
-	#tags{
-		position: absolute;
-    width: 85%;
-    top: 2.5%;
-    left: 9%;
+	#first-third p{
+		font-family: franklin-reg;
+		font-size: 16px; 
+		line-height: 24px; 
 	}
-
-
-	#left{
-		    padding-top: 10vh;
-		display: block;
-		float: left;
-		width: 100%; 
-		height: 55vh; 
-		background-color: white;
-
+	#second-third p{
+		font-family: franklin-reg;
+		font-size: 16px; 
+		line-height: 24px;
 	}
-	#headline{
-		width: 100%; 
-		text-align: center;
-		font-size: 72px; 
-		line-height: 110px; 
-		margin-top: 8vw; 
-	}
-	#phone-number{
-		width: 100%; 
-		text-align: center;
-		font-size: 36px;
-		line-height: 72px; 
-		
-	}
-	#right{
-		    display: block;
-    float: left;
-    width: 90%;
-    margin-left: 5%;
-    height: 120vh;
-    padding-top: 10vh;
-    background-color: white; 
-
-	}
-	#right p {
+	#third-third p{
 		font-family: franklin-reg;
 		
 		font-size: 21px;
 		line-height: 30px; 
 	}
-	#right ol{
+	#third-third ol{
 		font-family: franklin-reg;
 		margin-left: 10%; 
 		font-size: 21px;
-		line-height: 36px; 
+		line-height: 30px; 
 	}
-	#right .links{
+	#third-third .links {
 		margin-top: 5%;
-	    /*width: 33%;*/
-	    
+	    width: 33%;
 	    display: block;
 	    float: left;
 	    font-size: 16px;
@@ -260,86 +219,109 @@ time, mark, audio, video {
 	    cursor: pointer; 
 	    text-align: center;
 	}
-	#right .link-left{
+	#third-third .link-left{
 		text-align: left;
-		margin-right: 20%;
+
 	}
-	 #right .link-center{
+	#third-third .link-right{
 		text-align: right; 
-		margin-right: 20%;
 	}
-	.underline{
-		border-bottom: solid 2px black; 
+	.sub{
+		font-size: .5vw; 
 	}
-	#bottom{
-		display: block;
-		float: left;
-		width: 100%; 
-		/*height: 20vh; */
-		padding-top: 3%; 
-		background-color: #f2f2f2; 
-		padding-bottom: 10%; 
-
-	}
-	#bottom p {
-		font-size: 16px;
-		line-height: 26px; 
-	}
-	.no-show{
-		display: none; 
-	}
-	#bottom ul{
-		width: 90%; 
-		padding-top: 10%; 
-
-	}
-	#bottom ul li{
-		display: block;
-		float: left;
-		width: 100%; 
-		margin-left: 5%; 
-	}
-	#logo{
-			width: 50%; 
-		}
-.tag{
+	.tag{
 				font-family: franklin-reg; 
 				/*border-radius: 5vw; */
 				padding: 6px 8px 3px 8px;
 				font-size: 13px; 
 				margin-right: 1%; 
 			}
-			#copy{
-		position: relative;
-		width: 100%; 
-		padding-bottom: 20px; 
+			#first-third{
+				width: 85%;
+				padding: 7.5%;
+				display: block;
+				float: left; 
+			}
+			#second-third{
+				width: 85%;
+				padding: 7.5%;
+				display: block;
+				float: left;
+				background-color: #f9f9f9; 
+			}
+			#third-third{
+				width: 85%;
+				padding: 7.5%;
+			    margin-top: 0%;
+			    display: block;
+			    float: left;
+			    background-color: #f2f2f2;
+			    
+			    
+			}
+			#third-third img{
+				width: 100%; 
+			}
+
+	
+		#logo{
+			width: 60%; 
+		}
+
+
+	.underline{
+		border-bottom: solid 2px black; 
+	}
+	.no-show{
+		display: none; 
+	}
+	#copy{
+		position: absolute;
+		width: 85%; 
+		margin-bottom: 20px; 
 		/*bottom: 5px; */
 		font-size: 14px !important; 
-		padding-top: 50px; 
-/*background-color: #f2f2f2; */
+		margin-top: 50px; 
 		text-align: center;
 		color: grey;
 	}
-}		
+}
 </style>
 
 </head>
 <body>
-<div id="tags">
-		<span class="tag active" id="">ACTIVE</span>
+
+
+
+
+<div id="first-third">
+	<img id="logo" src="images/logo.svg">
+	<br><br>
+	<p>The <span class="italic">W.i.A? Institute</span> is an inquiry into the word <span class="italic">Art</span> – who uses it, who benefits from it, who has defined it, and how we will use and define it in the future.</p>
+	
+	
+</div>
+
+<div id="second-third">
+	<br><p>Current project:</p>
+	
+	<br>
+	<p>
+	<span class="italic">What is Art? O que é Arte? Que es Arte?</span><br>
+	Commissioned for <a href="https://www.walktalkazores.org/en" target="_blank">Walk&Talk - Arts Festival</a></p>
+	<br><br>
+
+	<span class="tag active" id="">ACTIVE</span>
 	<span class="tag participatory" id="">PARTICIPATORY</span>
 	<span id="demo" class="date tag"></span>
-</div>
 
+	<br><br>
+	
+</div>	
 
-<div id="left">
-	<p id="headline"><span  class="typed-01"></span>?</p><br><br>
-	<p id="phone-number"><span class="typed-02"></span><br class="mobile"><a class="" href="tel:+1-401-227-7636">+1 401-227-7636</a></p>
-</div>
-
-<div id="right">
-	<p class="links link-left" id="portuguese">Portuguese</p><p class="links link-center underline" id="english">English</p><p class="links " id="spanish"> Spanish</p>
-
+<div id="third-third">
+	<p class="links link-left" id="portuguese">Portuguese</p><p class="links underline" id="english">English</p><p class="links link-right" id="spanish"> Spanish</p>
+	
 	<br><br><br><br><br>
 	<div id="english-project" class="show">
 	<p >
@@ -404,24 +386,9 @@ time, mark, audio, video {
 		</ol>
 
 	</p>
-</div>
-</div>
-<div id="bottom">
-	<ul>
-		<li>
-			<img id="logo" src="images/logo-w-att.svg"/><br><br>
-			<p>The <span class="italic">W.i.A? Institute</span> is an inquiry into the word <span class="italic">Art</span> – who uses it, who benefits from it, who has defined it, and how we will use and define it in the future.</p>
-	
-		</li>
-		<li><br><br><br><br>
-			
-				<p>
-					Andrew Herzog<br>
-				<span class="italic">What is Art? O que é Arte? Que es Arte?</span>, 2020<br>
-				Commissioned by <a href="https://www.walktalkazores.org/en" target="_blank">Walk&Talk - Arts Festival</a></p>
-		</li>
-	</ul>
-	
+	<br><br><br>
+	</div>
+	<p id="copy">(Y)ours 2020</p>
 </div>
 
 <script type="text/javascript">
@@ -491,75 +458,6 @@ $('#spanish').click(function() {
     $("#english-project").addClass('no-show');
 });
 
-$(".typed-01").typed({
-		strings: ["O que<br>é Arte", "What<br>is Art", "¿Que<br>es Arte"],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 50,
-		// time before typing starts
-		startDelay: 200,
-		// backspacing speed
-		backSpeed: 200,
-		// time before backspacing
-		backDelay: 500,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: false,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-	});
-
-	$(".typed-02").typed({
-		strings: ["Call", "Llamada", "Ligar"],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 50,
-		// time before typing starts
-		startDelay: 200,
-		// backspacing speed
-		backSpeed: 200,
-		// time before backspacing
-		backDelay: 500,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: false,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-	});
-
 </script>
-</div>
 </body>
 </html>
